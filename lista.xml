@@ -1,0 +1,53 @@
+<configuration>
+    <product mark="Gryzak">
+        <id>1</id>
+        <name>Gryzak</name>
+        <price>40</price>
+    </product>
+    <product mark="Karma">
+        <id>2</id>
+        <name>Karma</name>
+        <price>50</price>
+    </product>
+    <product mark="Obroża">
+        <id>3</id>
+        <name>Obroża</name>
+        <price>10</price>
+    </product>
+    <product mark="Smycz">
+        <id>4</id>
+        <name>Smycz</name>
+        <price>80</price>
+    </product>
+    <product mark="Smaczki">
+        <id>5</id>
+        <name>Smaczki</name>
+        <price>20</price>
+    </product>
+    <product mark="Rybki">
+        <id>6</id>
+        <name>Rybki</name>
+        <price>30</price>
+    </product>
+    <product mark="Chomik">
+        <id>7</id>
+        <name>Chomik</name>
+        <price>15</price>
+    </product>
+    <product mark="Wąż">
+        <id>8</id>
+        <name>Wąż</name>
+        <price>100</price>
+    </product>
+    <product mark="Kuweta">
+        <id>9</id>
+        <name>Kuweta</name>
+        <price>65</price>
+    </product>
+    <product mark="Klatka">
+        <id>10</id>
+        <name>Klatka</name>
+        <price>200</price>
+    </product>
+
+</configuration>
