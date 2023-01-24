@@ -10,7 +10,7 @@ import java.util.List;
 public interface ProductRepository extends JpaRepository<Product, Long> {
 
     void deleteByName(String name);
-    List<Product> getAllProducts();
+    List<Product> findAll();
 }
 
 

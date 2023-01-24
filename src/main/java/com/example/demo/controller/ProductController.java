@@ -25,9 +25,9 @@ public class ProductController {
         productService.delete(name);
     }
 
-    @GetMapping
-    public List<Product> getAllProducts() {
-        return productService.getAllProducts();
+    @GetMapping("/findall/")
+    public List<Product> findAll() {
+        return productService.findAll();
     }
 
 }
