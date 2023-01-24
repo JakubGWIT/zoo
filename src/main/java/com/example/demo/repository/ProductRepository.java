@@ -11,7 +11,12 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 
     void deleteByName(String name);
     List<Product> findAll();
+
+
+
+
 }
+
 
 
 
