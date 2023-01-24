@@ -27,12 +27,12 @@ public class ProductController {
         productService.delete(name);
     }
 
-    @GetMapping("/findall/")
+    @GetMapping("/findall")
     public List<Product> findAll() {
         return productService.findAll();
     }
 
-    @GetMapping("/save/")
+    @GetMapping("/save")
     void saveDataFromXML() throws SQLException, JAXBException {
         productService.saveDataFromXML();
     }
