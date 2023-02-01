@@ -9,6 +9,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 @RestController
+
 public class ProductController {
 
     private final ProductService productService;
@@ -22,12 +23,12 @@ public class ProductController {
         Product product = Product.builder().id(1L).name("produkt").build();
         productService.addNewProduct(product);
     }
-    @DeleteMapping("/remove/{name}")
-    void deleteProduct(@PathVariable String name){
-        productService.delete(name);
+    @DeleteMapping("/remove/{id}")
+    void deleteProduct(@PathVariable Long id){
+        productService.delete(id);
     }
 
-    @GetMapping("/findall")
+    @GetMapping ("/findall")
     public List<Product> findAll() {
         return productService.findAll();
     }

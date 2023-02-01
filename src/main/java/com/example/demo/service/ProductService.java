@@ -2,6 +2,7 @@ package com.example.demo.service;
 
 import com.example.demo.entity.Product;
 import com.example.demo.repository.ProductRepository;
+import jakarta.persistence.Id;
 import org.springframework.stereotype.Service;
 
 import java.sql.Connection;
@@ -29,10 +30,9 @@ public class ProductService {
     public void addNewProduct(Product product){ productRepository.save(product);
     }
 
-    public void delete(String name){ productRepository.deleteByName(name);
+    public void delete(Long id){ productRepository.deleteById(id);
 
     }
-
     public List<Product> findAll() {return productRepository.findAll();
     }
 
@@ -40,9 +40,8 @@ public class ProductService {
     @XmlAccessorType(XmlAccessType.FIELD)
     public class MyObject {
 
-        @XmlAttribute
+        @XmlElement
         private Long id;
-
         @XmlElement
         private String name;
 
