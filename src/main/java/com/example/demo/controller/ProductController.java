@@ -33,7 +33,7 @@ public class ProductController {
     }
 
     @GetMapping("/save")
-    void saveDataFromXML() throws SQLException, JAXBException {
+    void saveDataFromXML() throws JAXBException {
         productService.savetodb();
     }
 
