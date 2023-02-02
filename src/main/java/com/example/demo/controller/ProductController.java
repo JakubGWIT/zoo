@@ -9,7 +9,6 @@ import java.sql.SQLException;
 import java.util.List;
 
 @RestController
-
 public class ProductController {
 
     private final ProductService productService;
@@ -19,13 +18,13 @@ public class ProductController {
     }
 
     @GetMapping("/add")
-    void addNewProduct(){
-        Product product = Product.builder().id(1L).name("produkt").build();
+    public void addNewProduct(){
+        Product product = Product.builder().id(1).name("nowy_test").build();
         productService.addNewProduct(product);
     }
-    @DeleteMapping("/remove/{id}")
-    void deleteProduct(@PathVariable Long id){
-        productService.delete(id);
+    @DeleteMapping("/delete/{id}")
+    public void deleteProduct(@PathVariable("id") int id){
+        productService.deleteProduct(id);
     }
 
     @GetMapping ("/findall")
@@ -35,7 +34,7 @@ public class ProductController {
 
     @GetMapping("/save")
     void saveDataFromXML() throws SQLException, JAXBException {
-        productService.saveDataFromXML();
+        productService.savetodb();
     }
 
 }
