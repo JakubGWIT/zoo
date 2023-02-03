@@ -41,6 +41,8 @@ public class ProductService {
         Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
         List<Product> products = (List<Product>) jaxbUnmarshaller.unmarshal(file);
 
+
+
         System.out.println(products);
     }
 
